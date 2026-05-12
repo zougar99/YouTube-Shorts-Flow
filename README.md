@@ -1,5 +1,7 @@
 #YouTube-Shorts-Flow
-DONWLOAD https://github.com/zougar99/YouTube-Shorts-Flow/releases/download/v1.0.0/workfloaw.zip
+
+
+![Downloads](https://img.shields.io/github/downloads/YOUR_USER/YOUR_REPO/total?style=for-the-badge&logo=download&logoColor=white)
 
 Automatisation YouTube — monitor, clip, publish Shorts.
 
