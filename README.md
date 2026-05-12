@@ -1,34 +1,35 @@
-# YouTube-Shorts-Flow
+#YouTube-Shorts-Flow
+DONWLOAD https://github.com/zougar99/YouTube-Shorts-Flow/releases/download/v1.0.0/workfloaw.zip
 
 Automatisation YouTube — monitor, clip, publish Shorts.
 
-- **Analyse chaîne** : YouTube Data API (vues, trend) ou RSS fallback
-- **Plan découpe Shorts** : segmentation automatique en segments ≤ 60s
-- **Publication auto** : yt-dlp + ffmpeg → upload via OAuth YouTube
-- **Publication manuelle** : copier/coller titre + description
-- **Extension Firefox** : popup avec copie rapide et préremplissage upload
-- **OAuth YouTube** : connexion sécurisée avec refresh token
+- **Chain analysis**: YouTube Data API (vues, trend) ou RSS fallback
+- **Cutting plan Shorts**: automatic segmentation into segments ≤ 60s
+- **Publication auto**: yt-dlp + ffmpeg → upload via OAuth YouTube
+- **Manual publishing**: copy/paste title + description
+- **Extension Firefox**: popup with quick copy and upload prefill
+- **OAuth YouTube**: secure connection with refresh token
 
-## Démarrage
+##Startup
 
 ```bash
 npm run dev
 ```
 
-Ouvre [http://localhost:3000](http://localhost:3000).
+Open[http://localhost:3000](http://localhost:3000).
 
-## Configuration
+##Configuration
 
-Copie `.env.example` → `.env.local` et renseigne :
+Copy`.env.example` → `.env.local`and informs:
 - `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` / `GOOGLE_REDIRECT_URI`
-- `YOUTUBE_API_KEY` (optionnel, sinon fallback RSS)
+- `YOUTUBE_API_KEY`(optional, otherwise RSS fallback)
 
-## Structure
+##Structure
 
 ```
 app/          – Routes Next.js (pages + API)
 components/   – Composants React
-lib/          – Logique métier (analyse, OAuth, clip, template…)
-extension/    – Module Firefox pour le plan Shorts
-scripts/      – Utilitaires
+lib/ – Business logic (analysis, OAuth, clip, template, etc.)
+extension/ – Firefox module for the Shorts plan
+scripts/ – Utilities
 ```
